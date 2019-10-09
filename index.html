@@ -11,9 +11,21 @@
 <body>
 
 <nav class="navbar no-gutters navbar-expand-sm">
-        <a href="index.html" class="btn btn--cta btn--red">Exit</a>
-        <a href="time.html" class="btn btn--cta btn--red">Time Analysis</a>
+     <!--   <a href="index.html" class="btn btn--cta btn--red">Exit</a>
+        <a href="time.html" class="btn btn--cta btn--red">Time Analysis</a> -->
     </nav>
+
+     <h3>Capacity Planning Task Analysis Dashboard</h3>
+
+    <div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="dc-data-count">
+                    <span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section>
         <div class="container col-xs-4 col-sm-10">
@@ -26,6 +38,42 @@
 
                     <div class="clearfix"></div>
                 </div>
+
+                 <div class="col-xs-12 col-sm-3 text-center" id="priority">
+                    <strong>Priority</strong>
+                    <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                    <a class="reset" href="javascript:priorityChart.filterAll();dc.redrawAll();" style="display: none;"></a>
+
+                    <div class="clearfix"></div>
+
+
+                </div>
+
+                <div class="col-xs-12 col-sm-3 text-center" id="worktype">
+                    <strong>Worktype</strong>
+                    <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                    <a class="reset" href="javascript:worktypeChart.filterAll();dc.redrawAll();" style="display: none;"></a>
+
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-3 text-center" id="platform">
+                    <strong>Platform</strong>
+                    <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                    <a class="reset" href="javascript:platformChart.filterAll();dc.redrawAll();" style="display: none;"></a>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container col-xs-12 col-sm-10 scrollable">
+
+        <table class="table table-hover dc-data-table">
+        </table>
+    </div>
 
 </body>
 
