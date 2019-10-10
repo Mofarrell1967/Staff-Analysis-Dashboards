@@ -41,4 +41,34 @@ h3
   padding-top: 1px;
 }
 
+.dc-chart .axis path, .dc-chart .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges; }
+
+.dc-chart .axis text {
+  font: 8px sans-serif; }
+
+.dc-chart .grid-line, .dc-chart .axis .grid-line, .dc-chart .grid-line line, .dc-chart .axis .grid-line line {
+  fill: none;
+  stroke: #ccc;
+  shape-rendering: crispEdges; }
+
+  .dc-chart g.row text {
+  fill: #fff;
+  font-size: 12px;
+  cursor: pointer; }
+
+  .dc-data-table {
+  font-size: small;
+  line-height: normal;
+
+}
+
+.container {
+   border: solid 1px;
+   margin-top: 25px;
+   background-color: #f8f8ff;
+}
+
 
