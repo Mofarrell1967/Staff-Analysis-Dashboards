@@ -70,7 +70,7 @@
 
     visTable
      .dimension(dateDim)
-     .size(150)
+     .size(220)
      .group(function(d) {
       var format = d3.format('02d');
       return d.date.getFullYear() + '/' + format((d.date.getMonth() + 1));
