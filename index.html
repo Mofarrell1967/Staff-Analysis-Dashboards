@@ -11,8 +11,8 @@
 <body>
 
 <nav class="navbar no-gutters navbar-expand-sm">
-     <!--   <a href="index.html" class="btn btn--cta btn--red">Exit</a>
-        <a href="time.html" class="btn btn--cta btn--red">Time Analysis</a> -->
+     <!--   <a href="index.html" class="btn btn-cta btn-red">Exit</a>
+        <a href="time.html" class="btn btn-cta btn-red">Time Analysis</a> -->
     </nav>
 
 
@@ -31,8 +31,6 @@
     </div>
 
 
-
-    <section>
         <div class="container col-xs-4 col-sm-10">
          <a href="#" data-toggle="tooltip" title="Click on single or multiple bars to filter the data to that selection!"><strong>?</strong></a>
             <div class=row>
@@ -73,7 +71,7 @@
                 </div>
             </div>
         </div>
-    </section>
+
 
     <div class="container col-xs-12 col-sm-10 scrollable">
  <a href="#" data-toggle="tooltip" title="The data in the table will automatically filter to the selections in the bar charts!"><strong>?</strong></a>
@@ -81,16 +79,19 @@
         </table>
     </div>
 
-</body>
 
-<script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script src="assets/js/tasks.js"></script>
+
+
+    <script>
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
 </script>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
-    <script src="assets/js/tasks.js"></script>
+</body>
+
 </html>
