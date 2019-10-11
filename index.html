@@ -15,20 +15,26 @@
         <a href="time.html" class="btn btn--cta btn--red">Time Analysis</a> -->
     </nav>
 
+
+
      <h3>Capacity Planning Task Analysis Dashboard</h3>
 
     <div>
+
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                <div class="dc-data-count">
-                    <span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+                            <div class="dc-data-count">
+                                <span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
                 </div>
             </div>
         </div>
     </div>
 
+
+
     <section>
         <div class="container col-xs-4 col-sm-10">
+         <a href="#" data-toggle="tooltip" title="Click on single or multiple bars to filter the data to that selection!"><strong>?</strong></a>
             <div class=row>
 
                 <div class="col-xs-12 col-sm-3 text-center" id="name">
@@ -70,12 +76,18 @@
     </section>
 
     <div class="container col-xs-12 col-sm-10 scrollable">
-
+ <a href="#" data-toggle="tooltip" title="The data in the table will automatically filter to the selections in the bar charts!"><strong>?</strong></a>
         <table class="table table-hover dc-data-table">
         </table>
     </div>
 
 </body>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
