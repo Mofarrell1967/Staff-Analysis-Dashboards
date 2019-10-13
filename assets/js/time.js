@@ -28,7 +28,31 @@ queue()
    .yAxisLabel("Hours")
    .yAxis().ticks(4);
 
+  var name_dim = ndx.dimension(dc.pluck('name'));
+  var total_hours_by_name = name_dim.group().reduceSum(dc.pluck('duration'));
+
+  dc.barChart("#total-hours-chart")
+   .width(380)
+   .height(250)
+   .margins({ top: 10, right: 50, bottom: 50, left: 50 })
+   .dimension(name_dim)
+   .group(total_hours_by_name)
+   .transitionDuration(500)
+   .renderLabel(true)
+   .elasticY(true)
+   .clipPadding(10)
+   .yAxisLabel("Hours")
+   .x(d3.scale.ordinal())
+   .xUnits(dc.units.ordinal)
+   .barPadding(0.1)
+   .outerPadding(0.05)
+   .colorAccessor(d => d.key)
+   .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF'])
+   .yAxis().ticks(10);
+
+
+
+
+
    dc.renderAll();
-
-
  }
