@@ -22,16 +22,12 @@ body {
 .dc-data-count .filter-count, .dc-data-count .total-count {
     color: #3182bd;
     font-weight: bold;
-
-
 }
 
 .dc-data-table {
   font-size: small;
   line-height: normal;
-
-
-}
+} 
 
 h4,
 h3
@@ -90,4 +86,7 @@ h3
 
 }
 
+.barLabel {
+	font-size: 10px;
+}
 
