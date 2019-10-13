@@ -27,7 +27,7 @@ body {
 .dc-data-table {
   font-size: small;
   line-height: normal;
-} 
+}
 
 h4,
 h3
@@ -74,9 +74,9 @@ h3
 
 }
 
-.btn-col {
-    color: #fff;
-    background-color: #000;
+..btn-col {
+    color: #000;
+    background-color: #F9FBFC;
     border-color: #5768FF;
 }
 
@@ -88,5 +88,10 @@ h3
 
 .barLabel {
 	font-size: 10px;
+}
+
+.page-header {
+  margin-left: 35%;
+
 }
 
