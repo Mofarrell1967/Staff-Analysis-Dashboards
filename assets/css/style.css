@@ -71,4 +71,23 @@ h3
    background-color: #f8f8ff;
 }
 
+.btn-cta {
+    font-weight: bold;
+    font-size: small;
+    border-radius: 20px;
+
+}
+
+.btn-col {
+    color: #fff;
+    background-color: #000;
+    border-color: #5768FF;
+}
+
+.line-section {
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+
 
