@@ -71,8 +71,48 @@ queue()
    .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF'])
    .yAxis().ticks(4);
 
+  var priority_dim = ndx.dimension(dc.pluck('priority'));
+  var total_hours_by_pri = priority_dim.group().reduceSum(dc.pluck('duration'));
+
+  dc.barChart("#priority-chart")
+   .width(380)
+   .height(250)
+   .margins({ top: 10, right: 50, bottom: 50, left: 50 })
+   .dimension(priority_dim)
+   .group(total_hours_by_pri)
+   .transitionDuration(500)
+   .x(d3.scale.ordinal())
+   .xUnits(dc.units.ordinal)
+   .renderLabel(true)
+   .elasticY(true)
+   .clipPadding(10)
+   .barPadding(0.1)
+   .outerPadding(0.05)
+   .colorAccessor(d => d.key)
+   .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF'])
+   .yAxis().ticks(4);
 
 
+  var plat_dim = ndx.dimension(dc.pluck('platform'));
+  var total_hours_by_plat = plat_dim.group().reduceSum(dc.pluck('duration'));
+
+  dc.barChart("#platform-chart")
+   .width(380)
+   .height(250)
+   .margins({ top: 10, right: 50, bottom: 50, left: 50 })
+   .dimension(plat_dim)
+   .group(total_hours_by_plat)
+   .transitionDuration(500)
+   .x(d3.scale.ordinal())
+   .xUnits(dc.units.ordinal)
+   .renderLabel(true)
+   .elasticY(true)
+   .clipPadding(10)
+   .barPadding(0.1)
+   .outerPadding(0.05)
+   .colorAccessor(d => d.key)
+   .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF'])
+   .yAxis().ticks(4);
 
 
    dc.renderAll();
