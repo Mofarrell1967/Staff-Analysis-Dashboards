@@ -50,6 +50,27 @@ queue()
    .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF'])
    .yAxis().ticks(10);
 
+  var work_dim = ndx.dimension(dc.pluck('worktype'));
+  var total_hours_by_work = work_dim.group().reduceSum(dc.pluck('duration'));
+
+  dc.barChart("#worktype-chart")
+   .width(380)
+   .height(250)
+   .margins({ top: 10, right: 50, bottom: 50, left: 50 })
+   .dimension(work_dim)
+   .group(total_hours_by_work)
+   .transitionDuration(500)
+   .x(d3.scale.ordinal())
+   .xUnits(dc.units.ordinal)
+   .renderLabel(true)
+   .elasticY(true)
+   .clipPadding(10)
+   .barPadding(0.1)
+   .outerPadding(0.05)
+   .colorAccessor(d => d.key)
+   .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF'])
+   .yAxis().ticks(4);
+
 
 
 
