@@ -18,7 +18,7 @@ queue()
 
   dc.lineChart("#line-chart")
    .width(1600)
-   .height(300)
+   .height(400)
    .margins({ top: 10, right: 50, bottom: 50, left: 50 })
    .dimension(date_dim)
    .group(total_duration_per_date)
