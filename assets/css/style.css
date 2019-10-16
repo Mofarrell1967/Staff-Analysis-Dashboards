@@ -1,5 +1,5 @@
 body {
-    background-color: #F9FBFC;
+    background-color: rgb(214, 224, 245);
 }
 
 .scrollable {
@@ -13,14 +13,10 @@ body {
 }
 
 .dc-data-count {
-  float: right;
+ float: right;
+ }
 
 
-}
-.dc-data-count .filter-count, .dc-data-count .total-count {
-    color: #3182bd;
-    font-weight: bold;
-}
 
 .dc-data-table {
   font-size: small;
@@ -61,7 +57,7 @@ h3
 
 .container {
    border: solid 1px;
-   margin-top: 25px;
+   margin-top: 40px;
    background-color: #f8f8ff;
 }
 
@@ -72,7 +68,7 @@ h3
 
 }
 
-..btn-col {
+.btn-col {
     color: #000;
     background-color: #F9FBFC;
     border-color: #5768FF;
@@ -98,3 +94,15 @@ h3
 
 }
 
+.reset {
+  text-align: right;
+  color: #000;
+
+}
+
+.filter {
+  text-align: right;
+  color: #0000cd;
+  font-weight: bolder;
+  font-size: small;
+}
