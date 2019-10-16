@@ -6,84 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Staff Time Analysis Dashboard</title>
-
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-    <script src="assets/js/time.js"></script>
 
 </head>
 
 <body>
 
- <nav class="navbar no-gutters navbar-expand-sm">
-
-        <a href="index.html" class="btn btn-cta btn-col" data-toggle="tooltip" title="Click on link to analyse the data by task!">Task Analysis</a>
+    <nav class="navbar no-gutters navbar-expand-sm">
+        <a href="index.html" class="btn btn-cta btn-col" data-toggle="tooltip"
+            title="Click on link to analyse the data by task!">Task Analysis</a>
         <h5 class="page-header">Capacity Planning Time Analysis Dashboard</h5>
+        <div class="dc-data-count ml-auto">
+            <span class="filter-count"></span><a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+        </div>
     </nav>
 
 
-       <div class="row">
-    <div class="col-xs-12 col-md-6">
-            <div class="dc-data-count reset">
-                <span class="filter-count"><a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a></span>
+    <div class="container col-xs-4 col-sm-10">
+        <a href="#" data-toggle="tooltip"
+            title="Click on single or multiple bars to filter a selection or multiple selections by time!  ---  To clear, choose 'Reset All' or click on filtered selection to undo!  ---  The data label on the top of each graph displays the total hours for the filtered selection!"><strong>?</strong></a>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 text-center" id="total-hours-chart">
+                    <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                    <a class="reset" href="javascript:total-hours-chart.filterAll();dc.redrawAll();"
+                        style="display: none;"></a>
+                    <div class="clearfix"></div>
+                <h6 class="heading">Staff</h6>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 text-center" id="worktype-chart">
+                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                <a class="reset" href="javascript:worktype-chart.filterAll();dc.redrawAll();"
+                    style="display: none;"></a>
+                <div class="clearfix"></div>
+                <h6 class="heading">Work type</h6>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 text-center" id="priority-chart">
+                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                <a class="reset" href="javascript:priority-chart.filterAll();dc.redrawAll();"
+                    style="display: none;"></a>
+                <div class="clearfix"></div>
+                <h6 class="heading">Priority</h6>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 text-center" id="platform-chart">
+                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                <a class="reset" href="javascript:platform-chart.filterAll();dc.redrawAll();"
+                    style="display: none;"></a>
+                <div class="clearfix"></div>
+                <h6 class="heading">Platform</h6>
             </div>
         </div>
     </div>
 
-
-            <div class="container col-xs-12 col-sm-10">
-                  <a href="#" data-toggle="tooltip" title="Click on single or multiple bars to filter a selection or multiple selections by time!  ---  To clear, choose 'Reset All' or click on filtered selection to undo!  ---  The data label on the top of each graph displays the total hours for the filtered selecion!"><strong>?</strong></a>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-3 text-center" id="total-hours-chart">
-                        <h6 class="heading">Staff</h6>
-                        <span class="reset" style="display: none;">Selected:</span> <span class="filter"></span>
-                        <a class="reset" href="javascript:total-hours-chart.filterAll();dc.redrawAll();" style="display: none;"></a>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-3 text-center" id="worktype-chart">
-                        <h6 class="heading">Work type</h6>
-                        <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                        <a class="reset" href="javascript:worktype-chart.filterAll();dc.redrawAll();" style="display: none;"></a>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 text-center" id="priority-chart">
-                        <h6 class="heading">Priority</h6>
-                        <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                        <a class="reset" href="javascript:priority-chart.filterAll();dc.redrawAll();" style="display: none;"></a>
-
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 text-center" id="platform-chart">
-                        <h6 class="heading">Platform</h6>
-                        <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                        <a class="reset" href="javascript:platform-chart.filterAll();dc.redrawAll();" style="display: none;"></a>
-
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
+    <div class="container col-xs-12 col-sm-10">
+        <a href="#" data-toggle="tooltip"
+            title="Click on the start of your selection and drag to end time.  ---  Release to filter on the required time selection!  ---  Use side panels on graph to increase / decrease time!  ---  To clear, choose 'Reset All' or click mouse in unfiltered area of graph!"><strong>?</strong></a>
+        <div class="row">
+            <div id="line-chart">
+                <h5 class="time-heading">Time</h5>
             </div>
+        </div>
+    </div>
 
-
-
-
-            <div class="container col-xs-12 col-sm-10">
-                 <a href="#" data-toggle="tooltip" title="Click on the start of your selection and drag to end time.  ---  Release to filter on the required time selection!  ---  Use side panels on graph to increase / decrease time!  ---  To clear, choose 'Reset All' or click mouse in unfiltered area of graph!"><strong>?</strong></a>
-                <div class="row">
-                    <div id="line-chart">
-                        <h5 class="time-heading">Time</h5>
-                    </div>
-                </div>
-            </div>
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+    <script src="assets/js/time.js"></script>
 
 </body>
 
