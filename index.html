@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Staff Task Analysis Dashboard</title>
@@ -28,9 +30,14 @@
 
 
         <div class="container col-xs-4 col-sm-10">
-         <a href="#" data-toggle="tooltip" title="Click on single or multiple bars to filter the data to that selection!  ---  To clear, choose 'Reset All' or click on filtered selection to undo!  ---  To view number of tasks for any selection just hover the mouse over the required bar in the graphs"><strong>?</strong></a>
-            <div class=row>
+       <div class="row">
+            <div class="col-sm-4">
+                <button class="btn btn-sm btn btn-sm btn-outline-primary" data-toggle="modal"
+                    data-target="#PPModal">Guide</button>
+            </div>
+        </div>
 
+            <div class=row>
                 <div class="col-xs-12 col-sm-3 text-center" id="name">
                     <strong>Name</strong>
                     <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
@@ -75,6 +82,33 @@
         </table>
     </div>
 
+     <div class="modal" tabindex="-1" role="dialog" id="PPModal">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">User Guide</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Text Holder</h3>
+
+
+                        <h4>Heading</h4>
+                        <p>Text Holder</p>
+                        <h4>Heading</h4>
+                        <p>Text Holder</p>
+                </div>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
@@ -82,11 +116,7 @@
     <script src="assets/js/tasks.js"></script>
 
 
-    <script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
+
 
 </body>
 
