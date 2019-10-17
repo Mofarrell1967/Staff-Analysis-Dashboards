@@ -26,6 +26,7 @@ queue()
    .x(d3.time.scale().domain([minDate, maxDate]))
    .xAxisLabel("Month")
    .yAxisLabel("Hours")
+   .renderArea(true)
    .yAxis().ticks(4);
 
   var name_dim = ndx.dimension(dc.pluck('name'));
