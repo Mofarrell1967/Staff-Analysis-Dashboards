@@ -27,7 +27,7 @@ queue()
    .xAxisLabel("Month")
    .yAxisLabel("Hours")
    .renderArea(true)
-   .yAxis().ticks(4);
+   .yAxis().ticks(10);
 
   var name_dim = ndx.dimension(dc.pluck('name'));
   var total_hours_by_name = name_dim.group().reduceSum(dc.pluck('duration'));
