@@ -33,7 +33,7 @@
     var dateGroup = dateDim.group();
       nameChart
      .width(380)
-     .height(250)
+     .height(275)
      .dimension(nameDim)
      .group(nameGroup)
      .elasticX(true)
@@ -41,7 +41,7 @@
 
     worktypeChart
      .width(380)
-     .height(250)
+     .height(275)
      .dimension(worktypeDim)
      .group(worktypeGroup)
      .elasticX(true)
@@ -49,7 +49,7 @@
 
     platformChart
      .width(380)
-     .height(250)
+     .height(275)
      .dimension(platformDim)
      .group(platformGroup)
      .elasticX(true)
@@ -57,7 +57,7 @@
 
     priorityChart
      .width(380)
-     .height(250)
+     .height(275)
      .dimension(priDim)
      .group(priGroup)
      .elasticX(true)
