@@ -74,24 +74,41 @@
         </div>
     </div>
 
-      <div class="modal" tabindex="-1" role="dialog" id="time-Modal">
+      <div class="modal" id="time-Modal" role="dialog" tabindex="-1">
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">User Guide</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <h5 class="modal-title mod-col">Time Analysis Dashboard User Guide</h5>
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    <p class="text-center">Scroll to view page or click on 'X' to exit.</p>
                     <div class="modal-body">
-                        <h3>Text Holder</h3>
-                            <h4>Heading</h4>
-                            <p>Text Holder</p>
-                            <h4>Heading</h4>
-                            <p>Text Holder</p>
-
-            </div>
-        </div>
+                        <h4 class="mod-head">Dashboard Overview</h4>
+                        <p>The time analysis dashboard allows the user to view and filter total time spent based on the following fields.</p>
+                        <p>Staff Name.</p>
+                        <p>Work Type.</p>
+                        <p>Work Priority.</p>
+                        <p>Equipment Platform.</p>
+                        <p>The top panel displays the total number of hours as row-charts and the 2nd panel displays a line graph to show a time-line for the total time spent or specific filtered selections.</p>
+                        <h4 class="mod-head">Bar Charts</h4>
+                        <h6 class="mod-col">Filtering</h6>
+                        <p>To filter the graphs, click on single or multiple bars to show the time data for each selection. Selection choices will be displayed above each graph.</p>
+                        <p>Each filter choice will display the data relevant to the filters and the number of hours for each selection is displayed as a label on top of each graph bar.</p>
+                        <h6 class="mod-col">Selected or total filter reset</h6>
+                        <p>To reset a single filter, click on the selected bar and the filter will be removed.</p>
+                        <p>To remove all filters, click on the 'Reset All' in the top right hand corner of the page.</p>
+                        <h4 class="mod-head">Line Graph</h4>
+                        <h6 class="mod-col">Filtering</h6>
+                        <p>The line graph will display time over months based on the filtering selections in the bar charts.</p>
+                        <p>Users can also filter using the 'brush on' function by mouse click on first time point in the graph and then drag mouse to end point and release. This
+                           will filter the data for that selected period</p>
+                        <h6 class="mod-col">Selected or total line graph filter reset</h6>
+                        <p>To remove all filters, click on the 'Reset All' in the top right hand corner of the page. To removed a 'brush on' filter, a mouse click in an unfiltered area of the
+                           graph will reset the selection.</p>
+                    </div>
+                </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
