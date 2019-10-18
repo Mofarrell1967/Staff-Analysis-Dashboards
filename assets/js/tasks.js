@@ -14,8 +14,8 @@
      worktypeChart = dc.rowChart("#worktype"),
      platformChart = dc.rowChart("#platform"),
      priorityChart = dc.rowChart("#priority"),
-     visCount = dc.dataCount(".dc-data-count"),
-     visTable = dc.dataTable(".dc-data-table");
+     dataCount = dc.dataCount(".dc-data-count"),
+     dataTable = dc.dataTable(".dc-data-table");
 
 
 
@@ -63,12 +63,12 @@
      .elasticX(true)
      .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF']);
 
-    visCount
+    dataCount
      .dimension(ndx)
      .group(all);
 
 
-    visTable
+    dataTable
      .dimension(dateDim)
      .size(220)
      .group(function(d) {
