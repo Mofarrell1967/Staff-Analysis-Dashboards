@@ -2,130 +2,139 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Staff Time Analysis Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Staff Time Analysis Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 </head>
 
 <body>
 
-    <nav class="navbar no-gutters navbar-expand-sm">
-        <a href="index.html" class="btn btn-cta btn-col" data-toggle="tooltip"
-            title="Click on link to analyse the data by task!">Task Analysis</a>
-             <div class="row">
-                    <div class="col-sm-4">
-                         <button class="btn btn-cta btn-col" data-target="#time-Modal" data-toggle="modal">User Guide</button>
-                    </div>
-                </div>
-        <h5 class="page-header">Capacity Planning Time Analysis Dashboard</h5>
-        <div class="dc-data-count ml-auto">
-            <span class="filter-count"></span><a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
-        </div>
-    </nav>
+	<nav class="navbar no-gutters navbar-expand-sm">
+		<a href="index.html" class="btn btn-cta btn-col" data-toggle="tooltip"
+			title="Click on link to analyse the data by task!">Task Analysis</a>
+		<div class="row">
+			<div class="col-sm-4">
+				<button class="btn btn-cta btn-col" data-target="#time-Modal" data-toggle="modal">User Guide</button>
+			</div>
+		</div>
+		<h5 class="page-header">Capacity Planning Time Analysis Dashboard</h5>
+		<div class="dc-data-count ml-auto">
+			<span class="filter-count"></span><a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+		</div>
+	</nav>
 
+	<div class="container col-xs-4 col-sm-10">
+		<h6 class="time-heading chart-heading">Analysis by time charts</h6>
+		<div class="row">
+			<div class="col-xs-12 col-sm-3 text-center" id="total-hours-chart">
+				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+				<a class="reset" href="javascript:total-hours-chart.filterAll();dc.redrawAll();"
+					style="display: none;"></a>
+				<div class="clearfix"></div>
+				<h6 class="heading">Staff</h6>
+			</div>
 
-    <div class="container col-xs-4 col-sm-10">
-    <h6 class="time-heading chart-heading">Analysis by time charts</h6>
-        <div class="row">
-            <div class="col-xs-12 col-sm-3 text-center" id="total-hours-chart">
-                    <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                    <a class="reset" href="javascript:total-hours-chart.filterAll();dc.redrawAll();"
-                        style="display: none;"></a>
-                    <div class="clearfix"></div>
-                <h6 class="heading">Staff</h6>
-            </div>
+			<div class="col-xs-12 col-sm-3 text-center" id="worktype-chart">
+				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+				<a class="reset" href="javascript:worktype-chart.filterAll();dc.redrawAll();"
+					style="display: none;"></a>
+				<div class="clearfix"></div>
+				<h6 class="heading">Work type</h6>
+			</div>
 
-            <div class="col-xs-12 col-sm-3 text-center" id="worktype-chart">
-                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                <a class="reset" href="javascript:worktype-chart.filterAll();dc.redrawAll();"
-                    style="display: none;"></a>
-                <div class="clearfix"></div>
-                <h6 class="heading">Work type</h6>
-            </div>
+			<div class="col-xs-12 col-sm-3 text-center" id="priority-chart">
+				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+				<a class="reset" href="javascript:priority-chart.filterAll();dc.redrawAll();"
+					style="display: none;"></a>
+				<div class="clearfix"></div>
+				<h6 class="heading">Priority</h6>
+			</div>
 
-            <div class="col-xs-12 col-sm-3 text-center" id="priority-chart">
-                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                <a class="reset" href="javascript:priority-chart.filterAll();dc.redrawAll();"
-                    style="display: none;"></a>
-                <div class="clearfix"></div>
-                <h6 class="heading">Priority</h6>
-            </div>
+			<div class="col-xs-12 col-sm-3 text-center" id="platform-chart">
+				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+				<a class="reset" href="javascript:platform-chart.filterAll();dc.redrawAll();"
+					style="display: none;"></a>
+				<div class="clearfix"></div>
+				<h6 class="heading">Platform</h6>
+			</div>
+		</div>
+	</div>
 
-            <div class="col-xs-12 col-sm-3 text-center" id="platform-chart">
-                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                <a class="reset" href="javascript:platform-chart.filterAll();dc.redrawAll();"
-                    style="display: none;"></a>
-                <div class="clearfix"></div>
-                <h6 class="heading">Platform</h6>
-            </div>
-        </div>
-    </div>
+	<div class="container col-xs-12 col-sm-10">
+		<div class="row">
+			<div id="line-chart">
+				<h6 class="time-heading chart-heading">Time by month line graph</h6>
+			</div>
+		</div>
+	</div>
 
-    <div class="container col-xs-12 col-sm-10">
-           <div class="row">
-            <div id="line-chart">
-                <h6 class="time-heading chart-heading">Time by month line graph</h6>
-            </div>
-        </div>
-    </div>
-
-      <div class="modal" id="time-Modal" role="dialog" tabindex="-1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title mod-col">Time Analysis Dashboard User Guide</h5>
-                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+	<div class="modal" id="time-Modal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title mod-col">Time Analysis Dashboard User Guide</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                    </div>
-                    <p class="text-center">Scroll to view page or click on 'X' to exit.</p>
-                    <div class="modal-body">
-                        <h4 class="mod-head">Dashboard Overview</h4>
-                        <p>The time analysis dashboard allows the user to view and filter total time spent based on the following fields.</p>
-                        <p>Staff Name.</p>
-                        <p>Work Type.</p>
-                        <p>Work Priority.</p>
-                        <p>Equipment Platform.</p>
-                        <p>The top panel displays the total number of hours as row-charts and the 2nd panel displays a line graph to show a time-line for the total time spent or specific filtered selections.</p>
-                        <h4 class="mod-head">Bar Charts</h4>
-                        <h6 class="mod-col">Filtering</h6>
-                        <p>To filter the graphs, click on single or multiple bars to show the time data for each selection. Selection choices will be displayed above each graph.</p>
-                        <p>Each filter choice will display the data relevant to the filters and the number of hours for each selection is displayed as a label on top of each graph bar.</p>
-                        <h6 class="mod-col">Selected or total filter reset</h6>
-                        <p>To reset a single filter, click on the selected bar and the filter will be removed.</p>
-                        <p>To remove all filters, click on the 'Reset All' in the top right hand corner of the page.</p>
-                        <h4 class="mod-head">Line Graph</h4>
-                        <h6 class="mod-col">Filtering</h6>
-                        <p>The line graph will display time over months based on the filtering selections in the bar charts.</p>
-                        <p>Users can also filter using the 'brush on' function by mouse click on first time point in the graph and then drag mouse to end point and release. This
-                           will filter the data for that selected period</p>
-                        <h6 class="mod-col">Selected or total line graph filter reset</h6>
-                        <p>To remove all filters, click on the 'Reset All' in the top right hand corner of the page. To removed a 'brush on' filter, a mouse click in an unfiltered area of the
-                           graph will reset the selection.</p>
-                    </div>
-                </div>
+				</div>
+				<p class="text-center">Scroll to view page or click on 'X' to exit.</p>
+				<div class="modal-body">
+					<h4 class="mod-head">Dashboard Overview</h4>
+					<p>The time analysis dashboard allows the user to view and filter total time spent based on the
+						following fields.</p>
+					<p>Staff Name.</p>
+					<p>Work Type.</p>
+					<p>Work Priority.</p>
+					<p>Equipment Platform.</p>
+					<p>The top panel displays the total number of hours as row-charts and the 2nd panel displays a line
+						graph to show a time-line for the total time spent or specific filtered selections.</p>
+					<h4 class="mod-head">Bar Charts</h4>
+					<h6 class="mod-col">Filtering</h6>
+					<p>To filter the graphs, click on single or multiple bars to show the time data for each selection.
+						Selection choices will be displayed above each graph.</p>
+					<p>Each filter choice will display the data relevant to the filters and the number of hours for each
+						selection is displayed as a label on top of each graph bar.</p>
+					<h6 class="mod-col">Selected or total filter reset</h6>
+					<p>To reset a single filter, click on the selected bar and the filter will be removed.</p>
+					<p>To remove all filters, click on the 'Reset All' in the top right hand corner of the page.</p>
+					<h4 class="mod-head">Line Graph</h4>
+					<h6 class="mod-col">Filtering</h6>
+					<p>The line graph will display time over months based on the filtering selections in the bar charts.
+					</p>
+					<p>Users can also filter using the 'brush on' function by mouse click on first time point in the
+						graph and then drag mouse to end point and release. This
+						will filter the data for that selected period</p>
+					<h6 class="mod-col">Selected or total line graph filter reset</h6>
+					<p>To remove all filters, click on the 'Reset All' in the top right hand corner of the page. To
+						removed a 'brush on' filter, a mouse click in an unfiltered area of the
+						graph will reset the selection.</p>
+				</div>
+			</div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+				crossorigin="anonymous">
+			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+				integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+				crossorigin="anonymous">
+			</script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+				integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+				crossorigin="anonymous">
+			</script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-    <script src="assets/js/time.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+			<script src="assets/js/time.js"></script>
 
 </body>
 

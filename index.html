@@ -2,130 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>Staff Task Analysis Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<title>Staff Task Analysis Dashboard</title>
 </head>
 
 <body>
 
-    <nav class="navbar no-gutters navbar-expand-sm">
-        <a href="time.html" class="btn btn-cta btn-col" data-toggle="tooltip"
-            title="Click on link to analyse the data by time!">Time Analysis</a>
-            <div class="row">
-                    <div class="col-sm-4">
-                        <button class="btn btn-cta btn-col" data-target="#task-Modal" data-toggle="modal">User Guide</button>
-                    </div>
-                </div>
-        <h5 class="page-header">Capacity Planning Task Analysis Dashboard</h5>
-        <div class="dc-data-count ml-auto">
-            <span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a
-                href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
-        </div>
-    </nav>
+	<nav class="navbar no-gutters navbar-expand-sm">
+		<a href="time.html" class="btn btn-cta btn-col" data-toggle="tooltip"
+			title="Click on link to analyse the data by time!">Time Analysis</a>
+		<div class="row">
+			<div class="col-sm-4">
+				<button class="btn btn-cta btn-col" data-target="#task-Modal" data-toggle="modal">User Guide</button>
+			</div>
+		</div>
+		<h5 class="page-header">Capacity Planning Task Analysis Dashboard</h5>
+		<div class="dc-data-count ml-auto">
+			<span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a
+				href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+		</div>
+	</nav>
+
+	<div class="container col-xs-4 col-sm-10">
+		<h6 class="time-heading chart-heading">Analysis by task charts</h6>
+		<div class=row>
+			<div class="col-xs-12 col-sm-3 text-center" id="name">
+				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+				<a class="reset" href="javascript:nameChart.filterAll();dc.redrawAll();" style="display: none;"></a>
+				<div class="clearfix"></div>
+				<strong>Name</strong>
+			</div>
+
+			<div class="col-xs-12 col-sm-3 text-center" id="worktype">
+				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+				<a class="reset" href="javascript:worktypeChart.filterAll();dc.redrawAll();" style="display: none;"></a>
+				<div class="clearfix"></div>
+				<strong>Worktype</strong>
+			</div>
+
+			<div class="col-xs-12 col-sm-3 text-center" id="priority">
+				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+				<a class="reset" href="javascript:priorityChart.filterAll();dc.redrawAll();" style="display: none;"></a>
+				<div class="clearfix"></div>
+				<strong>Priority</strong>
+			</div>
+
+			<div class="col-xs-12 col-sm-3 text-center" id="platform">
+				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+				<a class="reset" href="javascript:platformChart.filterAll();dc.redrawAll();" style="display: none;"></a>
+				<div class="clearfix"></div>
+				<strong>Platform</strong>
+			</div>
+		</div>
+	</div>
 
 
+	<div class="container col-xs-12 col-sm-10 scrollable">
+		<h6 class="time-heading chart-heading">Filtered records table</h6>
+		<table class="table table-hover dc-data-table">
+		</table>
+	</div>
 
-
-    <div class="container col-xs-4 col-sm-10">
-     <h6 class="time-heading chart-heading">Analysis by task charts</h6>
-        <div class=row>
-            <div class="col-xs-12 col-sm-3 text-center" id="name">
-                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                <a class="reset" href="javascript:nameChart.filterAll();dc.redrawAll();" style="display: none;"></a>
-                <div class="clearfix"></div>
-                <strong>Name</strong>
-
-            </div>
-
-            <div class="col-xs-12 col-sm-3 text-center" id="worktype">
-                    <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                    <a class="reset" href="javascript:worktypeChart.filterAll();dc.redrawAll();" style="display: none;"></a>
-                    <div class="clearfix"></div>
-                    <strong>Worktype</strong>
-
-                </div>
-
-            <div class="col-xs-12 col-sm-3 text-center" id="priority">
-                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                <a class="reset" href="javascript:priorityChart.filterAll();dc.redrawAll();" style="display: none;"></a>
-                <div class="clearfix"></div>
-                <strong>Priority</strong>
-            </div>
-
-            <div class="col-xs-12 col-sm-3 text-center" id="platform">
-                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
-                <a class="reset" href="javascript:platformChart.filterAll();dc.redrawAll();" style="display: none;"></a>
-                <div class="clearfix"></div>
-                <strong>Platform</strong>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container col-xs-12 col-sm-10 scrollable">
-    <h6 class="time-heading chart-heading">Filtered records table</h6>
-        <table class="table table-hover dc-data-table">
-        </table>
-    </div>
-
-
-     <div class="modal" id="task-Modal" role="dialog" tabindex="-1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title mod-col">Task Analysis Dashboard User Guide</h5>
-                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+	<div class="modal" id="task-Modal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title mod-col">Task Analysis Dashboard User Guide</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                    </div>
-                    <p class="text-center">Scroll to view page or click on 'X' to exit.</p>
-                    <div class="modal-body">
-                        <h4 class="mod-head">Dashboard Overview</h4>
-                        <p>The task analysis dashboard allows the user to view and filter work records based on the following fields.</p>
-                        <p>Staff Name.</p>
-                        <p>Work Type.</p>
-                        <p>Work Priority.</p>
-                        <p>Equipment Platform.</p>
-                        <p>The top panel displays the total number of tasks as row-charts and the 2nd panel displays the record details for the selections.</p>
-                        <h4 class="mod-head">Bar Charts</h4>
-                        <h6 class="mod-col">Filtering</h6>
-                        <p>To filter the graphs, click on single or multiple bars to show the task data for each selection. Selection choices will be displayed above each graph.</p>
-                        <p>Each filter choice with display the data relevant to the filters and the number of selected records will be displayed in the top right hand corner of the page.</p>
-                        <h6 class="mod-col">Selected or total filter reset</h6>
-                        <p>To reset a single filter, click on the selected bar and the filter will be removed.</p>
-                        <p>To remove all filters, click on the 'Reset All' in the top right hand corner of the page.</p>
-                        <h6 class="mod-col">X-Axis Display</h6>
-                        <p>The X-Axis is dynamic and will automatically render ticks to provide the best display of the filtered data.</p>
-                        <p>This ensures that all displays will be easily read for analysis.</p>
-                        <h4 class="mod-head">Data Table</h4>
-                        <h6 class="mod-col">Data Filtering</h6>
-                        <p>The data table will display all records in the database upon loading and the right hand scroll bar can be used to view the records.</p>
-                        <p>Each filter selection on the graphs will automatically filter the data table to those selections and only relevant records will be displayed.</p>
-                        <h6 class="mod-col">Selected or total filter reset</h6>
-                        <p>The data table will undo filters revert to total view as per the reset commands for the graphs.</p>
-                    </div>
-                </div>
+				</div>
+				<p class="text-center">Scroll to view page or click on 'X' to exit.</p>
+				<div class="modal-body">
+					<h4 class="mod-head">Dashboard Overview</h4>
+					<p>The task analysis dashboard allows the user to view and filter work records based on the
+						following fields.</p>
+					<p>Staff Name.</p>
+					<p>Work Type.</p>
+					<p>Work Priority.</p>
+					<p>Equipment Platform.</p>
+					<p>The top panel displays the total number of tasks as row-charts and the 2nd panel displays the
+						record details for the selections.</p>
+					<h4 class="mod-head">Bar Charts</h4>
+					<h6 class="mod-col">Filtering</h6>
+					<p>To filter the graphs, click on single or multiple bars to show the task data for each selection.
+						Selection choices will be displayed above each graph.</p>
+					<p>Each filter choice with display the data relevant to the filters and the number of selected
+						records will be displayed in the top right hand corner of the page.</p>
+					<h6 class="mod-col">Selected or total filter reset</h6>
+					<p>To reset a single filter, click on the selected bar and the filter will be removed.</p>
+					<p>To remove all filters, click on the 'Reset All' in the top right hand corner of the page.</p>
+					<h6 class="mod-col">X-Axis Display</h6>
+					<p>The X-Axis is dynamic and will automatically render ticks to provide the best display of the
+						filtered data.</p>
+					<p>This ensures that all displays will be easily read for analysis.</p>
+					<h4 class="mod-head">Data Table</h4>
+					<h6 class="mod-col">Data Filtering</h6>
+					<p>The data table will display all records in the database upon loading and the right hand scroll
+						bar can be used to view the records.</p>
+					<p>Each filter selection on the graphs will automatically filter the data table to those selections
+						and only relevant records will be displayed.</p>
+					<h6 class="mod-col">Selected or total filter reset</h6>
+					<p>The data table will undo filters revert to total view as per the reset commands for the graphs.
+					</p>
+				</div>
+			</div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+				crossorigin="anonymous">
+			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+				integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+				crossorigin="anonymous">
+			</script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+				integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+				crossorigin="anonymous">
+			</script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
-    <script src="assets/js/tasks.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+			<script src="assets/js/tasks.js"></script>
 
 
 
