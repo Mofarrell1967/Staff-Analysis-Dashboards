@@ -1,26 +1,26 @@
+/* ------------------ Main body and heading Styles ------------------ */
+
 body {
     background-color: rgb(214, 224, 245);
 }
 
-.scrollable {
-  height: 450px;
-  overflow-y: scroll;
+.page-header {
+  margin-left: 30%;
+
 }
 
-.count {
+.chart-heading {
+  color: #0000cd;
+  text-decoration: underline;
+}
+
+.time-heading {
   text-align: center;
-  margin-left: 50px;
+
 }
 
-.dc-data-count {
- float: right;
- }
-
-
-
-.dc-data-table {
-  font-size: small;
-  line-height: normal;
+.barLabel {
+	font-size: 10px;
 }
 
 h4,
@@ -31,35 +31,13 @@ h3
   padding-top: 1px;
 }
 
-.dc-chart .axis path, .dc-chart .axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges; }
-
-.dc-chart .axis text {
-  font: 8px sans-serif; }
-
-.dc-chart .grid-line, .dc-chart .axis .grid-line, .dc-chart .grid-line line, .dc-chart .axis .grid-line line {
-  fill: none;
-  stroke: #ccc;
-  shape-rendering: crispEdges; }
-
-  .dc-chart g.row text {
-  fill: #fff;
-  font-size: 12px;
-  cursor: pointer; }
-
-  .dc-data-table {
-  font-size: small;
-  line-height: normal;
-
-}
-
 .container {
    border: solid 1px;
    margin-top: 40px;
    background-color: #f8f8ff;
 }
+
+/* ------------------ Button Styles ------------------ */
 
 .btn-cta {
     font-weight: bold;
@@ -75,25 +53,7 @@ h3
     border-color: #5768FF;
 }
 
-.line-section {
-	padding-top: 5px;
-	padding-bottom: 5px;
-
-}
-
-.barLabel {
-	font-size: 10px;
-}
-
-.page-header {
-  margin-left: 35%;
-
-}
-
-.time-heading {
-  text-align: center;
-
-}
+/* ------------------ Chart Filter Styles ------------------ */
 
 .reset {
   text-align: right;
@@ -108,6 +68,13 @@ h3
   font-size: small;
 }
 
+.count {
+  text-align: center;
+  margin-left: 50px;
+}
+
+/* ------------------ Modal Styles ------------------ */
+
 .mod-col {
   color: #0000cd;
 }
@@ -117,7 +84,9 @@ h3
   font-weight: bold;
 }
 
-.chart-heading {
-  color: #0000cd;
-  text-decoration: underline;
+/* ------------------ Table Scroll ------------------ */
+
+.scrollable {
+  height: 450px;
+  overflow-y: scroll;
 }
