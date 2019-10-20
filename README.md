@@ -84,8 +84,8 @@ file and any filters or selections provided the same correct results as those ma
 # FEATURES
 
 Task Analysis Dashboard
-
-![Task Analysis Dashboard](https:https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/#/workspace/Staff-Analysis-Dashboards/assets/documents/images/index.html.png "Task Analysis Dashboard")
+![alt text for image](https://github.com/Mofarrell1967/Staff-Analysis-Dashboards/assets/documents/images/index.html.png "Logo Title Text 1")
+![Task Analysis Dashboard](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=b4a5b8fb-cedc-4c7f-a466-3daaadc3266a "Task Analysis Dashboard")
 
 The features enabled on the Task Dashboard are;
 
@@ -109,7 +109,7 @@ The features enabled on the Task Dashboard are;
 
 Task Analysis Dashboard
 
-![alt text](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=99236982-da0a-4c8c-b347-f84e0bb5a7a0 "Task Analysis Dashboard")
+![Time Analysis Dashboard](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=99236982-da0a-4c8c-b347-f84e0bb5a7a0 "Time Analysis Dashboard")
 
 The features enabled on the Time Dashboard are;
 
@@ -124,7 +124,7 @@ The features enabled on the Time Dashboard are;
 
 
 ### Time Analysis Dashboard Wireframe
-![alt text](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=0cd84233-3e48-4cc6-93f1-9ad23a93efaf "Time Analysis Wireframe")
+![Time Analysis Wireframe](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=0cd84233-3e48-4cc6-93f1-9ad23a93efaf "Time Analysis Wireframe")
 
 ## Future Release & development
 
