@@ -84,8 +84,8 @@ file and any filters or selections provided the same correct results as those ma
 # FEATURES
 
 Task Analysis Dashboard
-![alt text for image](https://github.com/Mofarrell1967/Staff-Analysis-Dashboards/assets/documents/images/index.html.png "Logo Title Text 1")
-![Task Analysis Dashboard](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=b4a5b8fb-cedc-4c7f-a466-3daaadc3266a "Task Analysis Dashboard")
+
+![index](assets/documents/images/index.html.png)
 
 The features enabled on the Task Dashboard are;
 
