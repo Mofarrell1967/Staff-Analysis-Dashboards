@@ -201,11 +201,11 @@ desktop screens and overhead projection units
 
 This site is hosted on GitHub and deployed directly from the master branch. Any commit updates or new releases will be deployed to that master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
-To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://mofarrell1967.github.io/Staff-Analysis-Dashboards/ into your terminal. To unlink the site from the GitHub repository, type git remote rm origin into the terminal.
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/Mofarrell1967/Staff-Analysis-Dashboards into your terminal. To unlink the site from the GitHub repository, type git remote rm origin into the terminal.
 
 The site is hosted on GitHub and can be run from there or locally by pasting the following link directly into your browser. https://mofarrell1967.github.io/Staff-Analysis-Dashboards/
 
-To view the source code please click on the following GitHub address https://mofarrell1967.github.io/Staff-Analysis-Dashboards/
+To view the source code please click on the following GitHub address https://github.com/Mofarrell1967/Staff-Analysis-Dashboards
 
 
 ## Company Deployment
