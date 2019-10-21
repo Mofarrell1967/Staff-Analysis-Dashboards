@@ -76,7 +76,7 @@ expectations for the dasboards and detail all specific requirements before comme
 It was also set down that the testing methodology would remain in line with current team processes and all testing would follow a manual schedule of testing the layout
 & presentation of the dashboards and the functionality of content and formula.
 
-The Scope of Requirements can be downloaded [here](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=ce0f7068-91ff-4a33-a09b-6da991366888) and the testing results and comments are recorded from page 5 of the document.
+The Scope of Requirements can be downloaded [here](assets/documents/dashboard_scope.pdf) and the testing results and comments are recorded from page 5 of the document.
 
 Further testing was completed during development based on the known results in the sample csv source file to ensure all results were the same as those in the source
 file and any filters or selections provided the same correct results as those manually calculated from this source file csv.
@@ -100,7 +100,7 @@ The features enabled on the Task Dashboard are;
 
 
 ### Task Analysis Dashboard Wireframe
-![alt text](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=b3774ed0-8aab-45d4-affc-8cfd14374e8b "Task Analysis Wireframe")
+![index](assets/documents/images/task.dashboard.wireframe.image.png)
 
 
 
@@ -109,7 +109,7 @@ The features enabled on the Task Dashboard are;
 
 Task Analysis Dashboard
 
-![Time Analysis Dashboard](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=99236982-da0a-4c8c-b347-f84e0bb5a7a0 "Time Analysis Dashboard")
+![index](assets/documents/images/time.html.png)
 
 The features enabled on the Time Dashboard are;
 
@@ -124,7 +124,7 @@ The features enabled on the Time Dashboard are;
 
 
 ### Time Analysis Dashboard Wireframe
-![Time Analysis Wireframe](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=0cd84233-3e48-4cc6-93f1-9ad23a93efaf "Time Analysis Wireframe")
+![index](assets/documents/images/time.dashboard.wireframe.image.png)
 
 ## Future Release & development
 
@@ -157,23 +157,64 @@ Phase 3
 
 # TESTING
 
+The testing methodology was agreed by the team and based on manual process covering agreed criteria.
+
+The first element of testing covered the layout and presentation of the pages to ensure they met the requirements set out
+in the scope and satisfied the expectations of the user base.
+
+Each element was reviewed by the testing team and given a 'pass' or 'fail' score - a 'pass' would result in the design Sprint
+being signed off and a 'fail' resulted in that sprint being returned to the developer with comment and instruction to resolve
+the reported issue.
+
+Layout & Presentation test results
+
+![index](assets/documents/testing/layout_test_results.png)
 
 
-![alt text](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=5709b3d1-c447-4e47-b613-6de3a439ee15 "Layout Test Results")
+The 2nd phase of testing covered the functionality and useability of the index.html (Task Analysis Dashboard) and was tested to
+ensure all required aspects of the page complied with requirements.
+
+All dashboard functionality was tested by the team during this testing phase and the 'pass' or 'fail' score was applied to the
+results with 'fail' being returned for action and resolution.
+
+Task Dashboard Test Results
+
+![index](assets/documents/testing/task_dashboard_test_results.png)
 
 
+The 3rd phase of testing covered the functionality and useability of the time.html (Time Analysis Dashboard) and was tested to
+ensure all required aspects of the page complied with requirements.
+
+All dashboard functionality was tested by the team during this testing phase and the 'pass' or 'fail' score was applied to the
+results with 'fail' being returned for action and resolution.
+
+Time Dashboard Test Results
+
+![index](assets/documents/testing/time_dashboard_test_results.png)
+
+The pages are not required to be device responsive and, therefore, was only tested to ensure they displayed correctly on
+desktop screens and overhead projection units
 
 
-![alt text](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=ee182022-c772-4f7d-8aa3-9f1c3a711cbe "Task Analysis Test Results")
+# DEPLOYMENT
+
+## GitHub
+
+This site is hosted on GitHub and deployed directly from the master branch. Any commit updates or new releases will be deployed to that master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://mofarrell1967.github.io/Staff-Analysis-Dashboards/ into your terminal. To unlink the site from the GitHub repository, type git remote rm origin into the terminal.
+
+The site is hosted on GitHub and can be run from there or locally by pasting the following link directly into your browser. https://mofarrell1967.github.io/Staff-Analysis-Dashboards/
+
+To view the source code please click on the following GitHub address https://mofarrell1967.github.io/Staff-Analysis-Dashboards/
 
 
+## Company Deployment
 
+Deployment within the company pages will be applied through the copying of the source code from the GitHub pages and placing the code in the local company Sharepoint resource pages.
+The code will then be updated to use the production data source files instead of the test csv source.
 
-![alt text](https://a6e72915-de86-4fe2-9475-3338a019fc38.ws-eu0.gitpod.io/files/download/?id=0cd84233-3e48-4cc6-93f1-9ad23a93efaf "Time Analysis Test Results")
-
-
-
-
+# CREDITS
 
 
 
