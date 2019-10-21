@@ -1,14 +1,18 @@
 # STAFF ANALYSIS DASHBOARDS
 
-This site contains dashboards to provide detailed analysis of team data for work and time permitting the users to filter data displays as required.
+This site contains dashboards to provide detailed analysis of team data for work & time permitting the users to filter data displays as required.
 There are 2 dashboards in the site, the first graphs staff records filtering by work completed and also contains a filtered table for better visualisation.
 The 2nd page provides analysis of the time utilised for the recorded tasks.
+
+![index](assets/documents/images/index.html.png)
 
 The intention of the design and development is to meet requirements of management and move the team to a more automated analysis work style,
 enabling users to run analysis on demand without the requirement to export data to other systems or manually create graphical representations
 of data when required.
 
-The dashboards can be accessed by clicking "here"
+![index](assets/documents/images/time.html.png)
+
+The dashboards can be run by clicking [here](https://mofarrell1967.github.io/Staff-Analysis-Dashboards/)
 
 # UX
 
@@ -76,7 +80,7 @@ expectations for the dasboards and detail all specific requirements before comme
 It was also set down that the testing methodology would remain in line with current team processes and all testing would follow a manual schedule of testing the layout
 & presentation of the dashboards and the functionality of content and formula.
 
-The Scope of Requirements can be downloaded [here](assets/documents/dashboard_scope.pdf) and the testing results and comments are recorded from page 5 of the document.
+The Scope of Requirements can be viewed [here](assets/documents/dashboard_scope.pdf) and the testing results and comments are recorded from page 5 of the document.
 
 Further testing was completed during development based on the known results in the sample csv source file to ensure all results were the same as those in the source
 file and any filters or selections provided the same correct results as those manually calculated from this source file csv.
@@ -84,8 +88,6 @@ file and any filters or selections provided the same correct results as those ma
 # FEATURES
 
 Task Analysis Dashboard
-
-![index](assets/documents/images/index.html.png)
 
 The features enabled on the Task Dashboard are;
 
@@ -102,14 +104,9 @@ The features enabled on the Task Dashboard are;
 ### Task Analysis Dashboard Wireframe
 ![index](assets/documents/images/task.dashboard.wireframe.image.png)
 
-
-
-
-
+The Task Analysis Page Mockups can be viewed [here](assets/documents/mockups/task.dashboard.mockup.pdf)
 
 Task Analysis Dashboard
-
-![index](assets/documents/images/time.html.png)
 
 The features enabled on the Time Dashboard are;
 
@@ -125,6 +122,8 @@ The features enabled on the Time Dashboard are;
 
 ### Time Analysis Dashboard Wireframe
 ![index](assets/documents/images/time.dashboard.wireframe.image.png)
+
+The Time Analysis Page Mockups can be viewed [here](assets/documents/mockups/time.dashboard.mockup.pdf)
 
 ## Future Release & development
 
@@ -214,7 +213,30 @@ To view the source code please click on the following GitHub address https://mof
 Deployment within the company pages will be applied through the copying of the source code from the GitHub pages and placing the code in the local company Sharepoint resource pages.
 The code will then be updated to use the production data source files instead of the test csv source.
 
+Locations and paths for this deployment cannot be viewed from this page as per company security policies.
+
 # CREDITS
+
+### content
+
+Thanks go to John Alexis Guerra Gómez for the youtube tutorial which was used to assist in the development of the table and row charts
+
+https://www.youtube.com/watch?v=8TBh5ghRZrI
+
+Code Institute for the eduational modules used as partial templates for the bar graphs and functionality
+
+https://courses.codeinstitute.net/program/FullstackWebDeveloper
+
+
+### Acknowledgements
+
+BT Capacity team for the SOR and testing of the pages
+
+CA for the inspiration in moving to dashboards from the existing reporting methods
+
+**Please Note that this site is currently for educational purposes only**
+
+
 
 
 
