@@ -80,7 +80,7 @@ expectations for the dasboards and detail all specific requirements before comme
 It was also set down that the testing methodology would remain in line with current team processes and all testing would follow a manual schedule of testing the layout
 & presentation of the dashboards and the functionality of content and formula.
 
-The Scope of Requirements can be viewed [here](assets/documents/dashboard_scope.pdf) and the testing results and comments are recorded from page 5 of the document.
+The Scope of Requirements can be viewed [here](assets/documents/scope/dashboard_scope.pdf) and the testing results and comments are recorded from page 5 of the document.
 
 Further testing was completed during development based on the known results in the sample csv source file to ensure all results were the same as those in the source
 file and any filters or selections provided the same correct results as those manually calculated from this source file csv.
