@@ -28,35 +28,39 @@
 		</div>
 	</nav>
 
-	<div class="container col-xs-4 col-sm-10">
+	<div class="container col-md-10">
 		<h6 class="time-heading chart-heading">Analysis by task charts</h6>
-		<div class=row>
-			<div class="col-xs-10 col-sm-3 text-center" id="name">
-				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+		<div class="row">
+			<div class="col text-center" id="name">
+            <strong>Name</strong>
+            				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
 				<a class="reset" href="javascript:nameChart.filterAll();dc.redrawAll();" style="display: none;"></a>
 				<div class="clearfix"></div>
-				<strong>Name</strong>
+
 			</div>
 
-			<div class="col-xs-10 col-sm-3 text-center" id="worktype">
+			<div class="col text-center" id="worktype">
+            <strong>Worktype</strong>
 				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
 				<a class="reset" href="javascript:worktypeChart.filterAll();dc.redrawAll();" style="display: none;"></a>
 				<div class="clearfix"></div>
-				<strong>Worktype</strong>
+
 			</div>
 
-			<div class="col-xs-10 col-sm-3 text-center" id="priority">
+			<div class="col text-center" id="priority">
+            <strong>Priority</strong>
 				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
 				<a class="reset" href="javascript:priorityChart.filterAll();dc.redrawAll();" style="display: none;"></a>
 				<div class="clearfix"></div>
-				<strong>Priority</strong>
+
 			</div>
 
-			<div class="col-xs-10 col-sm-3 text-center" id="platform">
+			<div class="col text-center" id="platform">
+            <strong>Platform</strong>
 				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
 				<a class="reset" href="javascript:platformChart.filterAll();dc.redrawAll();" style="display: none;"></a>
 				<div class="clearfix"></div>
-				<strong>Platform</strong>
+
 			</div>
 		</div>
 	</div>

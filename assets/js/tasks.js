@@ -32,7 +32,7 @@
     var priGroup = priDim.group();
     var dateGroup = dateDim.group();
       nameChart
-     .width(380)
+      .width(350)
      .height(275)
      .dimension(nameDim)
      .group(nameGroup)
@@ -40,7 +40,7 @@
      .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF']);
 
     worktypeChart
-     .width(380)
+     .width(350)
      .height(275)
      .dimension(worktypeDim)
      .group(worktypeGroup)
@@ -48,7 +48,7 @@
      .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF']);
 
     platformChart
-     .width(380)
+     .width(350)
      .height(275)
      .dimension(platformDim)
      .group(platformGroup)
@@ -56,7 +56,7 @@
      .ordinalColors(['#5768FF', '#6A43E8', '#5738FF', '#173DE8', '#5327E8', '#1F22FF', '#6E2BFF']);
 
     priorityChart
-     .width(380)
+     .width(350)
      .height(275)
      .dimension(priDim)
      .group(priGroup)
