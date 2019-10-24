@@ -18,7 +18,7 @@
 			title="Click on link to analyse the data by time!">Time Analysis</a>
 		<div class="row">
 			<div class="col-sm-4">
-				<button class="btn btn-cta btn-col" data-target="#task-Modal" data-toggle="modal">User Guide</button>
+				<button class="btn btn-mod btn-user" data-target="#time-Modal" data-toggle="modal">User Guide</button>
 			</div>
 		</div>
 		<h5 class="page-header">Capacity Planning Task Analysis Dashboard</h5>
@@ -31,28 +31,28 @@
 	<div class="container col-xs-4 col-sm-10">
 		<h6 class="time-heading chart-heading">Analysis by task charts</h6>
 		<div class=row>
-			<div class="col-xs-12 col-sm-3 text-center" id="name">
+			<div class="col-xs-10 col-sm-3 text-center" id="name">
 				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
 				<a class="reset" href="javascript:nameChart.filterAll();dc.redrawAll();" style="display: none;"></a>
 				<div class="clearfix"></div>
 				<strong>Name</strong>
 			</div>
 
-			<div class="col-xs-12 col-sm-3 text-center" id="worktype">
+			<div class="col-xs-10 col-sm-3 text-center" id="worktype">
 				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
 				<a class="reset" href="javascript:worktypeChart.filterAll();dc.redrawAll();" style="display: none;"></a>
 				<div class="clearfix"></div>
 				<strong>Worktype</strong>
 			</div>
 
-			<div class="col-xs-12 col-sm-3 text-center" id="priority">
+			<div class="col-xs-10 col-sm-3 text-center" id="priority">
 				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
 				<a class="reset" href="javascript:priorityChart.filterAll();dc.redrawAll();" style="display: none;"></a>
 				<div class="clearfix"></div>
 				<strong>Priority</strong>
 			</div>
 
-			<div class="col-xs-12 col-sm-3 text-center" id="platform">
+			<div class="col-xs-10 col-sm-3 text-center" id="platform">
 				<span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
 				<a class="reset" href="javascript:platformChart.filterAll();dc.redrawAll();" style="display: none;"></a>
 				<div class="clearfix"></div>
@@ -62,7 +62,7 @@
 	</div>
 
 
-	<div class="container col-xs-12 col-sm-10 scrollable">
+	<div class="container col-xs-10 col-sm-10 scrollable">
 		<h6 class="time-heading chart-heading">Filtered records table</h6>
 		<table class="table table-hover dc-data-table">
 		</table>
@@ -114,6 +114,10 @@
 			</div>
 		</div>
 	</div>
+
+     <footer>
+        <div class="footer"></div>
+    </footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

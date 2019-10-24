@@ -43,9 +43,22 @@ h3
     margin-right: 5px;
 }
 
+.btn-mod {
+    font-weight: bold;
+    font-size: small;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
 .btn-col {
     color: #000;
     background-color: #F9FBFC;
+    border-color: #5768FF;
+}
+
+.btn-user {
+    color: #000;
+    background-color: #5768FF;
     border-color: #5768FF;
 }
 
@@ -85,3 +98,8 @@ h3
   height: 450px;
   overflow-y: scroll;
 }
+
+
+.footer {
+    margin: 25px;
+   }

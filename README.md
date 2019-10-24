@@ -49,7 +49,7 @@ when working in such a time sensitive environment and the need to
 be able to re-classify work priorities or distribute new tasks
 appropriately will result in better work conditions for the staff
 and provide me with the necessary data on hand to be able to
-manage our task load in a more efficent manner.
+manage our task load in a more efficient manner.
 
 ### Team User
 
@@ -75,7 +75,7 @@ the required information can be displayed at any time.
 ## UX based design
 
 On the back of the user stories and verbal requirements it was agreed that the team would develop a Statement of Requirements to clearly call out what the
-expectations for the dasboards and detail all specific requirements before commencing the development process.
+expectations for the dashboards and detail all specific requirements before commencing the development process.
 
 It was also set down that the testing methodology would remain in line with current team processes and all testing would follow a manual schedule of testing the layout
 & presentation of the dashboards and the functionality of content and formula.
@@ -92,10 +92,10 @@ Task Analysis Dashboard
 The features enabled on the Task Dashboard are;
 
 1.  Row Graphs for the 'Name', 'Worktype', 'Priority' & 'Platform' fields
-2.  A table showing "name", "date", "worktype", "platform", "duration", "priority", "id", "zone"
+2.  A table showing "name", "date", "Worktype", "platform", "duration", "priority", "id", "zone"
 3.  A mouse click on any graph bar will apply a filter to show the data for the selections
 4.  Multiple selections can be applied and the filter will then apply to the selection range
-5.  A 'reset' button has been added to the page to clear the filtering and user can also unfilter single selections also
+5.  A 'reset' button has been added to the page to clear the filtering and user can also un-filter single selections also
 6.  A User Guide Modal is available with instructions for using the dashboard
 7.  The table will automatically filter the records display based on what filtering has been applied to the graphs
 8.  a link to the Time Analysis Dashboard is also enabled on the screen for quick and easy transition to the alternative analysis page
@@ -114,7 +114,7 @@ The features enabled on the Time Dashboard are;
 2.  A line graph displaying the hours over a 'months' axis
 3.  A mouse click on any graph bar will apply a filter to show the data for the selections
 4.  Multiple selections can be applied and the filter will then apply to the selection range
-5.  A 'reset' button has been added to the page to clear the filtering and user can also unfilter single selections also
+5.  A 'reset' button has been added to the page to clear the filtering and user can also un-filter single selections also
 6.  A User Guide Modal is available with instructions for using the dashboard
 7.  The line graph will automatically filter based on graph selections and can also be filtered using mouse-click-drag-release (brush)
 8.  a link to the Time Analysis Dashboard is also enabled on the screen for quick and easy transition to the alternative analysis page
@@ -147,8 +147,8 @@ Phase 3
 # TECHNOLOGIES
 
 *   [Bootstrap](https://www.getbootstrap.com/) - For HTML and CSS design, layout & Styles
-*   [Javascipt](https://www.javascript.com/) -   To create graphical functionality
-*   [Crossfiler](https://square.github.io/crossfilter/) -   To enable filtering of graphical data
+*   [Javascript](https://www.javascript.com/) -   To create graphical functionality
+*   [Crossfilter](https://square.github.io/crossfilter/) -   To enable filtering of graphical data
 *   [D3](https://d3js.org/) -   To provide data driven manipulation of the document
 *   [DC](https://dc-js.github.io/dc.js/) -   To support the interactive chart development in Javascript and additional css styles
 *   [JQUERY](https://www.jquery.com/) -   To support the Modal development for the pages
@@ -194,6 +194,12 @@ Time Dashboard Test Results
 The pages are not required to be device responsive and, therefore, was only tested to ensure they displayed correctly on
 desktop screens and overhead projection units
 
+HTML & CSS Validation
+
+HTML code was validated using https://validator.w3.org/
+
+CSS code was validated using https://jigsaw.w3.org/css-validator/
+
 
 # DEPLOYMENT
 
@@ -223,7 +229,7 @@ Thanks go to John Alexis Guerra Gómez for the youtube tutorial which was used t
 
 https://www.youtube.com/watch?v=8TBh5ghRZrI
 
-Code Institute for the eduational modules used as partial templates for the bar graphs and functionality
+Code Institute for the educational modules used as partial templates for the bar graphs and functionality
 
 https://courses.codeinstitute.net/program/FullstackWebDeveloper
 
