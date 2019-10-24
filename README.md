@@ -194,11 +194,13 @@ Time Dashboard Test Results
 The pages are not required to be device responsive and, therefore, was only tested to ensure they displayed correctly on
 desktop screens and overhead projection units
 
-HTML & CSS Validation
+HTML, CSS & Javascriot Validation
 
 HTML code was validated using https://validator.w3.org/
 
 CSS code was validated using https://jigsaw.w3.org/css-validator/
+
+Javascript checked with https://jshint.com/
 
 
 # DEPLOYMENT

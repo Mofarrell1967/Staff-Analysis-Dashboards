@@ -81,6 +81,11 @@ h3
   margin-left: 50px;
 }
 
+.line {
+    width: 100%;
+    height: 100%;
+}
+
 /* ------------------ Modal Styles ------------------ */
 
 .mod-col {
@@ -99,7 +104,9 @@ h3
   overflow-y: scroll;
 }
 
+/* ------------------ Footer ------------------ */
+
 
 .footer {
     margin: 25px;
-   }
+}
